@@ -1,1 +1,23 @@
-[]
+[
+  {
+    "id": 1,
+    "nombre": "Juan Pérez",
+    "email": "juan.perez@email.com",
+    "telefono": "999888777",
+    "fechaRegistro": "2026-05-15"
+  },
+  {
+    "id": 2,
+    "nombre": "María García",
+    "email": "maria.garcia@email.com",
+    "telefono": "987654321",
+    "fechaRegistro": "2026-05-20"
+  },
+  {
+    "id": 3,
+    "nombre": "Carlos López",
+    "email": "carlos.lopez@email.com",
+    "telefono": "976543210",
+    "fechaRegistro": "2026-05-25"
+  }
+]

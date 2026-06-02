@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "id": 1,
+    "idCita": 1,
+    "monto": 150.00,
+    "fechaEmision": "2026-06-10",
+    "pagado": false
+  },
+  {
+    "id": 2,
+    "idCita": 2,
+    "monto": 200.00,
+    "fechaEmision": "2026-06-11",
+    "pagado": true
+  }
+]

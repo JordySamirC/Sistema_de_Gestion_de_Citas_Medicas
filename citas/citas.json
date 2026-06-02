@@ -1,1 +1,29 @@
-[]
+[
+  {
+    "id": 1,
+    "idCliente": 1,
+    "fecha": "2026-06-10",
+    "hora": "09:30",
+    "medico": "Dr. Ramírez",
+    "motivo": "Control general",
+    "estado": "pendiente"
+  },
+  {
+    "id": 2,
+    "idCliente": 2,
+    "fecha": "2026-06-11",
+    "hora": "14:00",
+    "medico": "Dra. Torres",
+    "motivo": "Consulta dermatológica",
+    "estado": "confirmada"
+  },
+  {
+    "id": 3,
+    "idCliente": 1,
+    "fecha": "2026-06-15",
+    "hora": "11:00",
+    "medico": "Dr. Ramírez",
+    "motivo": "Resultados de análisis",
+    "estado": "pendiente"
+  }
+]
