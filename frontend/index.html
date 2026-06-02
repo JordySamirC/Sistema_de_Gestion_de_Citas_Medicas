@@ -10,8 +10,6 @@
 <body>
   <div class="container mt-4">
     <h1 class="text-center mb-4">Sistema de Gestión de Citas Médicas</h1>
-    <p class="text-center text-muted">Arquitectura de Microservicios con Node.js</p>
-
     <ul class="nav nav-tabs mb-4" id="mainTabs">
       <li class="nav-item">
         <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tabClientes">Clientes</button>
@@ -32,7 +30,7 @@
         </div>
         <div class="table-responsive">
           <table class="table table-striped" id="tablaClientes">
-            <thead><tr><th>ID</th><th>Nombre</th><th>Email</th><th>Teléfono</th><th>Fecha Registro</th><th>Acciones</th></tr></thead>
+            <thead><tr><th>Nombre</th><th>Email</th><th>Teléfono</th><th>Fecha Registro</th><th>Acciones</th></tr></thead>
             <tbody></tbody>
           </table>
         </div>
@@ -45,7 +43,7 @@
         </div>
         <div class="table-responsive">
           <table class="table table-striped" id="tablaCitas">
-            <thead><tr><th>ID</th><th>ID Cliente</th><th>Fecha</th><th>Hora</th><th>Médico</th><th>Motivo</th><th>Estado</th><th>Acciones</th></tr></thead>
+            <thead><tr><th>Cliente</th><th>Fecha</th><th>Hora</th><th>Médico</th><th>Motivo</th><th>Estado</th><th>Acciones</th></tr></thead>
             <tbody></tbody>
           </table>
         </div>
@@ -58,7 +56,7 @@
         </div>
         <div class="table-responsive">
           <table class="table table-striped" id="tablaFacturacion">
-            <thead><tr><th>ID</th><th>ID Cita</th><th>Monto</th><th>Fecha Emisión</th><th>Pagado</th><th>Acciones</th></tr></thead>
+            <thead><tr><th>ID Cita</th><th>Monto</th><th>Fecha Emisión</th><th>Pagado</th><th>Acciones</th></tr></thead>
             <tbody></tbody>
           </table>
         </div>
@@ -90,7 +88,7 @@
         <div class="modal-header"><h5 class="modal-title">Cita</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
         <div class="modal-body">
           <input type="hidden" id="citaId">
-          <div class="mb-3"><label class="form-label">ID Cliente</label><select class="form-control" id="citaIdCliente"></select></div>
+          <div class="mb-3"><label class="form-label">Cliente</label><select class="form-control" id="citaIdCliente"></select></div>
           <div class="mb-3"><label class="form-label">Fecha</label><input type="date" class="form-control" id="citaFecha"></div>
           <div class="mb-3"><label class="form-label">Hora</label><input type="time" class="form-control" id="citaHora"></div>
           <div class="mb-3"><label class="form-label">Médico</label><input type="text" class="form-control" id="citaMedico"></div>

@@ -21,7 +21,7 @@ async function cargarClientes() {
     const tbody = document.querySelector('#tablaClientes tbody');
     tbody.innerHTML = data.map(c => `
       <tr>
-        <td>${c.id}</td><td>${c.nombre}</td><td>${c.email}</td>
+        <td>${c.nombre}</td><td>${c.email}</td>
         <td>${c.telefono}</td><td>${c.fechaRegistro}</td>
         <td>
           <button class="btn btn-warning btn-sm" onclick="editarCliente(${c.id})">Editar</button>
@@ -98,7 +98,7 @@ async function cargarCitas() {
     const tbody = document.querySelector('#tablaCitas tbody');
     tbody.innerHTML = citas.map(c => `
       <tr>
-        <td>${c.id}</td><td>${c.idCliente} (${clientesMap[c.idCliente] || '?'})</td>
+        <td>${clientesMap[c.idCliente] || '?'}</td>
         <td>${c.fecha}</td><td>${c.hora}</td><td>${c.medico}</td>
         <td>${c.motivo}</td>
         <td><span class="badge bg-${c.estado === 'confirmada' ? 'success' : c.estado === 'cancelada' ? 'danger' : c.estado === 'completada' ? 'secondary' : 'warning'}">${c.estado}</span></td>
@@ -192,7 +192,7 @@ async function cargarFacturacion() {
     const tbody = document.querySelector('#tablaFacturacion tbody');
     tbody.innerHTML = data.map(f => `
       <tr>
-        <td>${f.id}</td><td>${f.idCita}</td>
+        <td>${f.idCita}</td>
         <td>S/ ${f.monto.toFixed(2)}</td><td>${f.fechaEmision}</td>
         <td><span class="badge bg-${f.pagado ? 'success' : 'danger'}">${f.pagado ? 'Sí' : 'No'}</span></td>
         <td>
